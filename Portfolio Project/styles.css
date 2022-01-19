@@ -10,27 +10,118 @@
 */
 
 body {
-    margin: 0;
-    text-align: center;
-    font-family: "El Messiri", sans-serif;
+  margin: 0;
+  text-align: center;
+  font-family: "El Messiri", sans-serif;
 }
 
-.my-name {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 5.625rem;
-    color: #f05454;
+h3 {
+  font-size: 2rem;
 }
+
+p {
+  font-size: 1.25rem;
+}
+
+/* Content in top container */
 
 .top-container {
   background-color: bisque;
   min-height: 100vh;
   padding-top: 50px;
+  position: relative;
 }
+
+.my-name {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 5.625rem;
+  color: #f05454;
+}
+
+.anime-image {
+  height: 350px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* width:300px; */
+}
+
+/* Content in middle container */
 
 .middle-container {
   background-color: cadetblue;
-  height: 300px;
-  /* margin: 10px; top right bottom left */
+  min-height: 100vh;
+  padding: 100px 0;
+  /* margin: 10px; (top right bottom left) syntax when all specified */
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 200px auto;
+  text-align: left;
+}
+
+.skill-header {
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+.skill-paragraph {
+  /* margin-top: 25px; */
+  padding-top: 5px;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  width: 25%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0)
+  );
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/* Skill Images */
+
+.first-skill {
+  width: 30%;
+  float: left;
+  margin-right: 50px;
+}
+
+.second-skill {
+  width: 30%;
+  float: right;
+  margin-right: 50px;
+}
+
+.third-skill {
+  width: 30%;
+  float: left;
+  margin-right: 50px;
+}
+
+.fourth-skill {
+  width: 30%;
+  float: right;
+  margin-right: 50px;
+}
+
+.fifth-skill {
+  width: 30%;
+  float: left;
+  margin-right: 50px;
 }
 
 .bottom-container {
@@ -53,17 +144,7 @@ a {
   text-decoration: none;
 }
 
-.about-link {
-  padding: 10px 20px;
-  color: #ff5959;
-}
-
-.project-link {
-  padding: 10px 20px;
-  color: #ff5959;
-}
-
-.hobby-link {
+.top-container-link {
   padding: 10px 20px;
   color: #ff5959;
 }
